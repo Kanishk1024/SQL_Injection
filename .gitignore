@@ -1,0 +1,64 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+npm-debug.log
+npm-debug.log.*
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Build files
+backend/node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.c9/
+*.launch
+.settingspath
+*.sublime-workspace
+.eclipse
+
+# OS files
+Thumbs.db
+.DS_Store
+*.log
+
+# Docker
+docker-compose.override.yml
+.dockerignore.local
+
+# Database
+mysql_data/
+*.sql.bak
+
+# Sensitive files
+.env.production
+credentials.json
+secrets.json
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# IDE cache
+.cache/
+.virt_env/
+
+# Package manager lock files (optional - uncomment to track)
+# package-lock.json
+# yarn.lock
