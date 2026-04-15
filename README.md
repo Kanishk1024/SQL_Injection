@@ -88,14 +88,14 @@ A deliberately vulnerable web application demonstrating SQL injection attacks, b
 const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
 ```
 
-**Attack:** `admin' OR '1'='1 --` in username field bypasses password check
+**Attack:** `admin' OR '1'='1 -- '` in username field bypasses password check
 
 ### Search Endpoint (search.js)
 ```javascript
 const query = `SELECT id, title, content FROM records WHERE title LIKE '%${query}%'`;
 ```
 
-**Attack:** `' UNION SELECT id, secret_key, secret_value FROM secrets --` extracts secrets
+**Attack:** `' UNION SELECT id, secret_key, secret_value FROM secrets -- '` extracts secrets
 
 ## Phase 1 Deliverables
 

